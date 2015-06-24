@@ -1,0 +1,21 @@
+<div class="main_bg">
+	 <div class="container">
+		 <div class="main">	          
+			   <ul class="service_list">
+			   	<% @facilities.each do |facility|%>
+				 	<li>
+					   	<div class="ser_img">
+						    <a href="details.html">
+							<img src=<%=image_path("ser_pic1.jpg")%> alt="" />
+							<span class="next"> </span>
+							</a>
+				        </div>	
+						<a href="details.html"><h3><%= facility.title %></h3></a>
+						<p class="para">There are many variations of passages of Lorem Ipsum available,</p>
+						<h4><a  href="details.html"><%= facility.shot_title %></a></h4>
+					</li>
+				<% end %>
+			  </ul>
+		   </div>
+	  </div>
+</div>

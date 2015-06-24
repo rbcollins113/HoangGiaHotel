@@ -1,0 +1,19 @@
+<div class="rooms text-center">
+	 <div class="container">
+		 <h3>Our Restaurants</h3>
+		 <div class="room-grids">
+		 	<% @restaurants.each do |restaurant|%>
+			 <div class="col-md-4 room-sec">
+				 <a href="#"><img src=<%=image_path("pic1.jpg")%> alt=""/></a>
+				 <div class="caption">
+					<span>&#8356; 250</span>
+					<a href="contact.html">Book Now</a>
+				 </div>
+				 <h4><%= restaurant.title %></h4>
+				 <p><%= restaurant.description %></p>
+			 </div>
+			 <% end %>
+			 <div class="clearfix"></div>
+		 </div>
+	 </div>
+</div>

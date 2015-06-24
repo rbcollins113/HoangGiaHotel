@@ -1,0 +1,22 @@
+<div class="rooms text-center">
+	<div class="container">
+		<h3>Our Room Types</h3>
+		<div class="room-grids">
+			<% @rooms.each do |room| %>
+				<div class="col-md-4 room-sec">
+					<img src=<%=image_path("pic1.jpg")%> alt="<%= room.title %>"/>
+					<h4><%= room.title %></h4>
+					<p><%= room.description %></p>
+					<div class="items">
+						<li><a href="#"><span class="img1"> </span></a></li>
+						<li><a href="#"><span class="img2"> </span></a></li>
+						<li><a href="#"><span class="img3"> </span></a></li>
+						<li><a href="#"><span class="img4"> </span></a></li>
+						<li><a href="#"><span class="img5"> </span></a></li>
+						<li><a href="#"><span class="img6"> </span></a></li>
+					</div>
+				</div>
+			<% end %>
+		</div>
+	</div>
+</div>
