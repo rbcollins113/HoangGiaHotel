@@ -10,6 +10,7 @@ class PagesController < ApplicationController
 
   def restaurant
     @rooms = Room.all
+    @facilities = Facility.all
   end
 
   def conference
