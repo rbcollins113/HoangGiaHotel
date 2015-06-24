@@ -15,6 +15,7 @@ class PagesController < ApplicationController
 
   def conference
     @rooms = Room.all
+    @restaurants = Restaurant.all
   end
 
   def booking
